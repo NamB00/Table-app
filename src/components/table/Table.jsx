@@ -14,7 +14,7 @@ const Table = () => {
 	useEffect(() => {
 		const fetchData = async () => {
 			SetLoading(true);
-			const res = await axios.get('http://127.0.0.1:5173/src/data/users.json');
+			const res = await axios.get('https://api.npoint.io/fd8712d15683d5a439b3');
 			SetPosts(res.data);
 			SetLoading(false);
 		};
